@@ -80,15 +80,15 @@ Once added to Home Assistant you can configure different settings for your senso
 
 **SEN55 NOX**
 
-* Monitors nitrogen oxides (NOX), harmful gases produced by burning fossil fuels and industrial processes.
+* Monitors nitrogen oxides (NOX Index 1-500), harmful gases produced by burning fossil fuels and industrial processes. <a href="https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">NOX index from the SEN55</a>.
 
 **SEN55 VOC**
 
-Detects volatile organic compounds (VOC Index), which are emitted from paints, cleaning products, and industrial chemicals. <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index from the SEN55</a>.
+* Detects volatile organic compounds (VOC Index 1-500), which are emitted from paints, cleaning products, and industrial chemicals. <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index from the SEN55</a>.
 
-**VOC Quality** -This uses the <a href="https://sensirion.com/media/documents/ACD82D45/6294DFC0/Info_Note_Integration_VOC_NOx_Sensor.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index and a scale to output an easier to use variable</a>
+**VOC Quality** - This uses the <a href="https://sensirion.com/media/documents/ACD82D45/6294DFC0/Info_Note_Integration_VOC_NOx_Sensor.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index and a scale to output an easier to use variable</a>
 
-0-79: **Improved** -&gt; 80-149: **Normal** -&gt; 150-249: **Abnormal** -&gt; 250-399: **Very abnormal** -&gt; 400+: **Extremely abnormal**
+* 0-79: **Improved** -&gt; 80-149: **Normal** -&gt; 150-249: **Abnormal** -&gt; 250-399: **Very abnormal** -&gt; 400+: **Extremely abnormal**
 
 **PM 0.3 To 1 µm**
 
@@ -106,22 +106,13 @@ Detects volatile organic compounds (VOC Index), which are emitted from paints, c
 
 * Detects particles between 4 and 10 micrometers. Disabled by default.
 
-### Configuration
-
-* **ESP Reboot**
-  * Performs a restart of the sensor
-* **SEN55 Temperature Offset**
-  * Allows you to calibrate the SEN55 temperature. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
-* **SEN55 Humidity Offset**
-  * Allows you to calibrate the SEN55 humidity. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
-
 ![AIR-1 Sensor Data.jpg](assets/air-1-device-page-pic-1.png)
 
-#### Configuration:
+### Configuration
 
 **ESP Reboot**
 
-* A button to restart the ESP32 microcontroller running the AIR-1 sensor, helpful for troubleshooting or refreshing connections.
+* Performs a restart of the ESP32 microcontroller running the AIR-1 sensor, helpful for troubleshooting or refreshing connections.
 
 **Prevent Sleep**
 
@@ -129,13 +120,13 @@ Detects volatile organic compounds (VOC Index), which are emitted from paints, c
 
 **SEN55 Humidity Offset**
 
-* Allows you to adjust the humidity readings for calibration purposes.
+* Allows you to calibrate the SEN55 humidity by adjusting the offset in percentages. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/).
 
 **SEN55 Temperature Offset**
 
-* Lets you calibrate the temperature sensor by adjusting the offset in degrees Celsius.
+* Allows you to calibrate the SEN55 temperature by adjusting the offset in degrees Celsius. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/).
 
-#### Diagnostic:
+### Diagnostic
 
 **ESP Temperature**
 
