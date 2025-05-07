@@ -80,11 +80,11 @@ Once added to Home Assistant you can configure different settings for your senso
 
 **SEN55 NOX**
 
-* Monitors nitrogen oxides (NOX Index 1-500), harmful gases produced by burning fossil fuels and industrial processes. <a href="https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">NOX index from the SEN55</a>.
+* Monitors nitrogen oxides (NOX Index 1-500, running average is 1), harmful gases produced by burning fossil fuels and industrial processes. <a href="https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">NOX index from the SEN55</a>.
 
 **SEN55 VOC**
 
-* Detects volatile organic compounds (VOC Index 1-500), which are emitted from paints, cleaning products, and industrial chemicals. <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index from the SEN55</a>.
+* Detects volatile organic compounds (VOC Index 1-500, running average is 100), which are emitted from paints, cleaning products, and industrial chemicals. <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index from the SEN55</a>.
 
 **VOC Quality** - This uses the <a href="https://sensirion.com/media/documents/ACD82D45/6294DFC0/Info_Note_Integration_VOC_NOx_Sensor.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index and a scale to output an easier to use variable</a>
 
